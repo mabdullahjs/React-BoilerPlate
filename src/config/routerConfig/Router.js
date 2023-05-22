@@ -4,6 +4,7 @@ import Login from '../../pages/Login'
 // import ProtectedRoutes from './ProtectedRoutes'
 import Register from '../../pages/Signup'
 import Home from '../../pages/Home'
+import Forms from '../../pages/Forms'
 
 
 function Router() {
@@ -12,6 +13,7 @@ function Router() {
       <Routes>
         <Route path='/' element={<Login />} />
         <Route path='/register' element={<Register />} />
+        <Route path='/form' element={<Forms />} />
         <Route path='/home/*' element={<Home />} />
         <Route path='*' element={<Login />} />
       </Routes>
